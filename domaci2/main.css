@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+table{
+    border-collapse: collapse;
+}
+table, tr, td, th{
+    border: 2px solid green;
+}
+
+
+
+.ime{
+    text-align: center;
+    background-color: lightblue;
+}
+
+.prezime{
+    text-align: right;
+    background-color: yellow;
+}
+
+.jmbg{
+    text-align: left;
+    background-color: lightgreen;
+}
+
+#red2{
+    background-color: lightgreen;
+    color: red;
+}
+
+
+
+label{
+    text-align: right;
+    width: 100px;
+    display: inline-block;
+}
+.forma{
+    margin: 0px auto 0px;
+    padding: 0px;
+    width: 500px;
+    border: 2px solid green;
+}
+.unutar{
+    width: fit-content;
+    margin: 20px auto 20px;
+    padding: 0px;
+}
+.elementi{
+    margin-top: 20px;
+}
+button{
+    width: 80px;
+    margin: 20px auto 0px;
+    display: block;
+}
