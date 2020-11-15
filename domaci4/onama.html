@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/domaci4.css">
+        <script src="jquery.js"></script>
+
+
+        <title>Domaci 4</title>
+    </head>
+    <body>
+        <div class="header">
+            <img src="images/logo.png" alt="Logo nesto nece :^(" id="logo" />
+            <h2 id="moto">RACUNARI I VESTI ZA VAS</h2>
+            <div id="hmb_meni">
+                <img id="hmb_meni_slika" src="images/hmb.png" width="100px" style="margin: auto; display: block; border: 1px solid black; border-radius: 5px; cursor: pointer;">
+            </div>
+            <a class="meni_izbor" href="index.html#racunari">RACUNARI</a>
+            <a class="meni_izbor" href="onama.html">O NAMA</a>
+            <a class="meni_izbor" href="index.html#vesti">VEST</a>
+            <a class="meni_izbor" href="index.html#registracija">REGISTRACIJA</a>
+            <a class="meni_izbor" href="kontakt.html">KONTAKT</a>
+            
+        </div>
+
+        <div id="sadrzaj">
+            <br />
+            <h2 class="naslov">O nama</h2>
+            <p id="tekst">
+                Lorem ipsum dolor sit amet consectetur adip
+                isicing elit. Corporis consequuntur culpa facere accusamus repell
+                at ducimus, corrupti iure quidem blanditiis c
+                um, incidunt commodi repudiandae accusantium ipsam tempora saepe. Non, pariatur placeat?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rem ad at par
+                atur ducimus cumque possimus et hic iusto
+                similique labore soluta saepe, tenetur error dolorem dicta eius minima.
+            </p>
+            <br>
+            <h2 class="naslov">Galerija slika</h2>
+<br>
+            <div id="galerija">
+
+                <img id="glavnaSlika" src="images/img1.jpg" ></div>
+                    <br>
+                
+                <div id="ostale">
+                    <center>
+                    <img class="ostaleSlike" src="images/img1.jpg" style="border: 2px solid blue;" alt="">
+                    <img class="ostaleSlike" src="images/img2.jpg" alt="">
+                    <img class="ostaleSlike" src="images/lap3.jpg" alt="">
+                    <img class="ostaleSlike" src="images/img4.jpg" alt="">
+                    <img class="ostaleSlike" src="images/img5.jpg" alt="">
+                    <img class="ostaleSlike" src="images/img6.jpg" alt="">
+                    <img class="ostaleSlike" src="images/img7.jpg" alt="">
+                    <img class="ostaleSlike" src="images/lap1.jpg" alt="">
+                    <br>
+                    <span style="font-style: italic;">Kliknite na sliku</span>
+                </center>
+                </div>
+
+
+
+            </div>
+            
+
+
+            
+        </div>
+
+
+        <footer id="student">
+            <address>
+                Marko Maksimovic S1419 <br />
+                0654064264 <br />
+                mmaksimovic1419s@raf.rs <br />
+                Kneza Milosa 87, Cacak
+            </address>
+        </footer>
+
+        <script>
+            $("#hmb_meni_slika").click(function() {
+                    $(".meni_izbor").toggle();
+                });
+
+
+            $(".ostaleSlike").click(function() {
+                    $("#glavnaSlika").attr('src', $(this).attr('src'));
+                    $(".ostaleSlike").css("border", "1px solid black");
+                    $(this).css("border", "2px solid blue");
+                });
+        </script>
+        
+    </body>
+</html>
+    

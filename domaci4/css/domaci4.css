@@ -1,0 +1,727 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    min-width: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.header {
+    width: 100%;
+}
+#logo {
+    margin: 0px auto 0px auto;
+    width: 100px;
+    display: block;
+}
+#moto {
+    color: gray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: fit-content;
+    background-color: red;
+    
+}
+address {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+}
+#tekst{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+#galerija{
+    width: 50%;
+    margin: auto;
+}
+
+.ostaleSlike:hover{
+    opacity: 50%;
+    transition-duration: 1s;
+}
+
+#kontakt{
+    height: fit-content;
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.kontakt_unos{
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.kontakt_unos:focus{
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+.kontakt_dugme{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.kontakt_dugme:hover{
+    opacity: 50%;
+    border: 1px solid blue;
+}
+
+@media only screen and (max-width: 1180px){
+    #levo{
+        clear: both;
+    }
+    #desno{
+        clear: both;
+        margin-top: 25px;
+    }
+    #glavnaSlika{
+        width: 95%;
+        clear: both;
+        display: block;
+        margin: auto;
+    }
+
+    #ostale{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    
+    .ostaleSlike{
+        cursor: pointer;
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+
+    #meni {
+        margin: 20px auto 20px auto;
+    }
+    .meni_izbor {
+        display: none;
+        margin: auto;
+        float: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        background-color: lightblue;
+        font-size: 20px;
+        color: black;
+        border-bottom: 1px solid lightgreen;
+        transition-duration: 2s;
+    }
+    #hmb_meni{
+        background-color: lightblue;
+        display: block;
+    }
+    
+    .meni_izbor:hover {
+        background-color: blue;
+        border-bottom: none;
+        transition-duration: 0.8s;
+    }
+    
+    #sadrzaj {
+        clear: both;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .naslov {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .proizvodi_deo {
+        margin: auto;
+        width: 80%;
+    }
+    
+    .prozivodi_slike {
+        display: inline-block;
+        width: 100%;
+        max-height: 150px;
+    }
+    
+    .proizvod {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        width: 330px;
+        margin: 20px auto 20px auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        opacity: 70%;
+    }
+    .proizvod:hover {
+        opacity: 100%;
+        transition-duration: 0.6s;
+    }
+    
+    .specifikacije {
+        list-style-position: inside;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .naziv {
+        text-align: left;
+    }
+    .cena {
+        text-align: right;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .komada {
+        width: 30%;
+    }
+    
+    .red{
+        width: 60%;
+        margin: auto;
+    }
+    
+    .vest{
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -5px;
+        margin-right: 0px;
+        width: 90%;
+        height: 150px;
+        overflow-y: hidden;
+        text-align: left;
+        padding-right: 5px;
+        border: 1px solid black;
+        overflow-y: auto;
+    }
+    
+    .vest:hover{
+        opacity: 60%;
+        transition-duration: 0.3s;
+    }
+    .vesti_slika{
+        height: 100%;
+        width: 50%;
+        float: left; 
+        margin-right: 5px;
+    }
+    
+    
+    #register_forma {
+        width: 90%;
+        margin: 30px auto 30px auto;
+    }
+    
+    input{
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+    .text_input {
+        text-align: center;
+        width: 70%;
+        height: 25px;
+        font-size: 17px;
+        padding: 3px;
+        margin-bottom: 60px;
+    }
+    .text_input:hover {
+        background-color: lightblue;
+    }
+    .text_input:focus {
+        border: 2px solid lightblue;
+    }
+    
+    select {
+        font-size: 17px;
+    }
+    .radio_input {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    label {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    #datum_p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #datum {
+        font-size: 17px;
+    }
+    
+    #reg_dugme {
+        border-radius: 5px;
+        padding: 2px;
+        width: 40%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    #reg_dugme:hover {
+        cursor: pointer;
+        transition-duration: 0.5s;
+        background-color: lightblue;
+        border: 2px solid burlywood;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 1620px) and (min-width: 1180px){
+    #levo{
+        float: left;
+        width: 49%;
+    }
+    #levo>form{
+        margin-right: 10px;
+        width: fit-content;
+        float: right;
+    }
+    #desno{
+        padding-left: 10px;
+        float: left;
+        width: 49%;
+    }
+    #glavnaSlika{
+        width: 90%;
+        clear: both;
+        display: block;
+        margin: auto;
+    }
+
+
+    #ostale{
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+    
+    .ostaleSlike{
+        cursor: pointer;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+
+        #meni {
+            margin: 20px auto 20px auto;
+        }
+        #hmb_meni{
+            background-color: lightblue;
+            display: none;
+        }
+        .meni_izbor {
+            display: block;
+            margin: auto;
+            float: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-decoration: none;
+            width: 20%;
+            text-align: center;
+            background-color: lightblue;
+            font-size: 20px;
+            color: black;
+            border-bottom: 2px solid lightgreen;
+        }
+        
+        .meni_izbor:hover {
+            background-color: blue;
+            border-bottom: none;
+            transition-duration: 0.8s;
+        }
+        
+        #sadrzaj {
+            clear: both;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .naslov {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .proizvodi_deo {
+            margin: auto;
+            width: 80%;
+        }
+        
+        .prozivodi_slike {
+            display: inline-block;
+            width: 100%;
+            max-height: 150px;
+        }
+        
+        .proizvod {
+            display: flex;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            width: 330px;
+            margin: 20px 5% 20px 5%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            opacity: 70%;
+        }
+        .proizvod:hover {
+            opacity: 100%;
+            transition-duration: 0.6s;
+        }
+        
+        .specifikacije {
+            list-style-position: inside;
+            text-align: left;
+            margin-left: 5px;
+        }
+        .naziv {
+            text-align: left;
+        }
+        .cena {
+            text-align: right;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .komada {
+            width: 30%;
+        }
+        
+        .red{
+            width: 60%;
+            margin: auto;
+        }
+        
+        .vest{
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -5px;
+            margin-right: 0px;
+            width: 40%;
+            height: 150px;
+            overflow-y: hidden;
+            text-align: left;
+            padding-right: 5px;
+            border: 1px solid black;
+            overflow-y: auto;
+        }
+        
+        .vest:hover{
+            opacity: 60%;
+            transition-duration: 0.3s;
+        }
+        .vesti_slika{
+            height: 100%;
+            width: 50%;
+            float: left; 
+            margin-right: 5px;
+        }
+        
+        
+        #register_forma {
+            width: 50%;
+            margin: 30px auto 30px auto;
+        }
+        
+        .text_input {
+            text-align: center;
+            width: 25%;
+            height: 25px;
+            font-size: 17px;
+            padding: 3px;
+            margin-bottom: 30px;
+        }
+        .text_input:hover {
+            background-color: lightblue;
+        }
+        .text_input:focus {
+            border: 2px solid lightblue;
+        }
+        
+        select {
+            font-size: 17px;
+        }
+        .radio_input {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        label {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        #datum_p {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #datum {
+            font-size: 17px;
+        }
+        
+        #reg_dugme {
+            border-radius: 5px;
+            padding: 2px;
+            width: 10%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+        #reg_dugme:hover {
+            cursor: pointer;
+            transition-duration: 0.5s;
+            background-color: lightblue;
+            border: 2px solid burlywood;
+        }
+        
+        
+}
+
+
+@media only screen and (min-width: 1620px) {
+    #levo{
+        float: left;
+        width: 49%;
+    }
+    #levo>form{
+        margin-right: 10px;
+        width: fit-content;
+        float: right;
+    }
+    #desno{
+        padding-left: 10px;
+        float: left;
+        width: 49%;
+    }
+    #glavnaSlika{
+        width: 80%;
+        clear: both;
+        display: block;
+        margin: auto;
+    }
+
+        #meni{
+            margin: 20px auto 20px auto;
+        }
+        #hmb_meni{
+            background-color: lightblue;
+            display: none;
+        }
+        .meni_izbor {
+            display: block;
+            margin: auto;
+            float: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-decoration: none;
+            width: 20%;
+            text-align: center;
+            background-color: lightblue;
+            font-size: 20px;
+            color: black;
+            border-bottom: 2px solid lightgreen;
+        }
+        
+        .meni_izbor:hover {
+            background-color: blue;
+            border-bottom: none;
+            transition-duration: 0.8s;
+        }
+        
+        #sadrzaj {
+            clear: both;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .naslov {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .proizvodi_deo {
+            margin: auto;
+            width: 80%;
+        }
+        
+        .prozivodi_slike {
+            display: inline-block;
+            width: 100%;
+            max-height: 150px;
+        }
+        
+        .proizvod {
+            display: flex;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            width: 20%;
+            margin: 20px 1% 20px 1%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            opacity: 70%;
+        }
+        .proizvod:hover {
+            opacity: 100%;
+            transition-duration: 0.6s;
+        }
+        
+        .specifikacije {
+            list-style-position: inside;
+            text-align: left;
+            margin-left: 5px;
+        }
+        .naziv {
+            text-align: left;
+        }
+        .cena {
+            text-align: right;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .komada {
+            width: 30%;
+        }
+        
+        .red{
+            width: 60%;
+            margin: auto;
+        }
+        
+        .vest{
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -5px;
+            margin-right: 0px;
+            width: 40%;
+            height: 150px;
+            overflow-y: hidden;
+            text-align: left;
+            padding-right: 5px;
+            border: 1px solid black;
+            overflow-y: auto;
+        }
+        
+        .vest:hover{
+            opacity: 60%;
+            transition-duration: 0.3s;
+        }
+        .vesti_slika{
+            height: 100%;
+            width: 50%;
+            float: left; 
+            margin-right: 5px;
+        }
+        
+        
+        #register_forma {
+            width: 50%;
+            margin: 30px auto 30px auto;
+        }
+        
+        .text_input {
+            text-align: center;
+            width: 25%;
+            height: 25px;
+            font-size: 17px;
+            padding: 3px;
+            margin-bottom: 30px;
+        }
+        .text_input:hover {
+            background-color: lightblue;
+        }
+        .text_input:focus {
+            border: 2px solid lightblue;
+        }
+        
+        select {
+            font-size: 17px;
+        }
+        .radio_input {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        label {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        #datum_p {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #datum {
+            font-size: 17px;
+        }
+        
+        #reg_dugme {
+            border-radius: 5px;
+            padding: 2px;
+            width: 10%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+        #reg_dugme:hover {
+            cursor: pointer;
+            transition-duration: 0.5s;
+            background-color: lightblue;
+            border: 2px solid burlywood;
+        }
+        #ostale{
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+        
+        .ostaleSlike{
+            cursor: pointer;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        
+}
+
+
+
+
