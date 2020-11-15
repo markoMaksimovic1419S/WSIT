@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/domaci4.css">
+        <script src="jquery.js"></script>
+
+
+        <title>Domaci 4</title>
+    </head>
+    <body>
+        <div class="header">
+            <img src="images/logo.png" alt="Logo nesto nece :^(" id="logo" />
+            <h2 id="moto">RACUNARI I VESTI ZA VAS</h2>
+            <div id="hmb_meni">
+                <img id="hmb_meni_slika" src="images/hmb.png" width="100px" style="margin: auto; display: block; border: 1px solid black; border-radius: 5px; cursor: pointer;">
+            </div>
+            <a class="meni_izbor" href="index.html#racunari">RACUNARI</a>
+            <a class="meni_izbor" href="onama.html">O NAMA</a>
+            <a class="meni_izbor" href="index.html#vesti">VEST</a>
+            <a class="meni_izbor" href="index.html#registracija">REGISTRACIJA</a>
+            <a class="meni_izbor" href="kontakt.html">KONTAKT</a>
+            
+        </div>
+
+        <div id="sadrzaj">
+            <br>
+            <h2 class="naslov">Kontakt</h2>
+<br>
+<div id="kontakt">
+    <center>
+                <div class="delovi" id="levo">
+                    
+                    <form action="#">
+                        <h2>Kontakt forma</h2><br>
+                        <input required class="kontakt_unos" placeholder="Vase ime" type="text" name="ime"><br><br>
+                        <input required class="kontakt_unos" placeholder="Vas email" type="email" name="email"><br><br>
+                        <input required class="kontakt_unos" placeholder="Naslov poruke" type="text" name="naslov"><br><br>
+                        <textarea required class="kontakt_unos" name="poruka" id="poruka" cols="30" rows="10" placeholder="Tekst poruke" style="text-align: left;"></textarea><br><br>
+                        <button class="kontakt_dugme" type="submit">Posalji</button><br><br>
+                    </form>
+                </div>
+
+                <div class="delovi" id="desno">
+                    <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.266533097572!2d20.45722315518858!3d44.8161344752497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7ab2453c4ba1%3A0xb81037438bba0036!2z0KLRgNCzINGA0LXQv9GD0LHQu9C40LrQtQ!5e0!3m2!1ssr!2srs!4v1605430599630!5m2!1ssr!2srs"
+                      width="80%" height="350px" frameborder="0" style="border:0; margin-bottom: 50px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </center>
+            </div>
+            
+        </div>
+<br>
+        <footer id="student">
+            <address>
+                Marko Maksimovic S1419 <br />
+                0654064264 <br />
+                mmaksimovic1419s@raf.rs <br />
+                Kneza Milosa 87, Cacak
+            </address>
+        </footer>
+
+        <script>
+            $("#hmb_meni_slika").click(function() {
+                    $(".meni_izbor").toggle();
+                });
+        </script>
+        
+    </body>
+</html>
