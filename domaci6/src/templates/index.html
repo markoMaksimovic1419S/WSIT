@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Home Page </title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	</head>
+	<body>
+		<h1 id="ja">Marko Maksimovic 1419S</h1>
+		<table id="raspored">
+			<thead id="raspored_head">
+				<tr class="head_red">
+					<th>ID</th>
+					<th>Predmet</th>
+					<th>Tip</th>
+					<th>Nastavnik</th>
+					<th>Grupe</th>
+					<th>Dan</th>
+					<th>Termin</th>
+					<th>Ucionica</th>
+				</tr>
+			</thead>
+			<tbody id="raspored_body">
+		{% for i in a %}
+
+		<tr class="podaci">
+			<td>{{ i[0] }}</td>
+			<td>{{ i[1] }}</td>
+			<td>{{ i[2] }}</td>
+			<td>{{ i[3] }}</td>
+			<td>{{ i[4] }}</td>
+			<td>{{ i[5] }}</td>
+			<td>{{ i[6] }}</td>
+			<td>{{ i[7] }}</td>
+		</tr>
+
+
+		{% endfor %}
+		</tbody>
+		</table>
+					<table id="prof_ucio">
+						<thead>
+							<tr class="head_red">
+								<th>Profesor</th>
+								<th>Ucionica</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for i in x %}
+								<tr>
+								
+								
+									{% if i[0] %}
+										<td>{{ i[0] }}</td>
+									{% else %}
+										<td></td>
+									{% endif %}
+									
+									
+									
+									{% if i[1] %}
+										<td>{{ i[1] }}</td>
+									{% else %}
+										<td></td>
+									{% endif %}
+									
+									
+									
+								</tr>
+						{% endfor %}
+
+					</tbody>
+
+					</table>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+	</body>
+</html>

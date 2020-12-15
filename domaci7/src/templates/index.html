@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Home Page </title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	</head>
+	<body>
+
+		<h1 id="ja">Marko Maksimovic 1419S</h1>
+
+<center>
+		<form action="" method="GET">
+				
+				<input type="text" name="pretraga" id="pretraga" placeholder="Pretraga">
+
+
+
+		</form>
+	</center>
+
+		<a href="#" onclick="Cela();" id="ponovo">Cela tabela</a>
+
+		<table id="raspored">
+			<thead id="raspored_head">
+				<tr class="head_red">
+					<th scope="col">ID</th>
+					<th scope="col">Predmet</th>
+					<th scope="col">Tip</th>
+					<th scope="col">Nastavnik</th>
+					<th scope="col">Grupe</th>
+					<th scope="col">Dan</th>
+					<th scope="col">Termin</th>
+					<th scope="col">Ucionica</th>
+				</tr>
+			</thead>
+			<tbody id="raspored_body">
+		{% for i in a %}
+
+		<tr class="podaci">
+			<td>{{ i[0] }}</td>
+			<td>{{ i[1] }}</td>
+			<td>{{ i[2] }}</td>
+			<td>{{ i[3] }}</td>
+			<td>{{ i[4] }}</td>
+			<td>{{ i[5] }}</td>
+			<td>{{ i[6] }}</td>
+			<td>{{ i[7] }}</td>
+		</tr>
+
+
+		{% endfor %}
+		</tbody>
+		</table>
+					<table id="prof_ucio">
+						<thead>
+							<tr class="head_red">
+								<th>Profesor</th>
+								<th>Ucionica</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for i in x %}
+								<tr>
+									{% if i[0] %}
+										<td><a href="#" onclick="ProfesoriUcionice('{{ i[0] }}');">{{ i[0] }}</a></td>
+									{% else %}
+										<td></td>
+									{% endif %}
+
+									{% if i[1] %}
+										<td><a href="#" onclick="ProfesoriUcionice('{{ i[1] }}');">{{ i[1] }}</a></td>
+									{% else %}
+										<td></td>
+									{% endif %}
+								</tr>
+						{% endfor %}
+
+					</tbody>
+
+					</table>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+
+		<script type="text/javascript">
+			
+			function Cela(){
+				$(".podaci").show();
+				$("#pretraga").val("");
+				$('.podaci:visible:odd').css("background-color","#00B6FF");
+
+				$('.podaci:visible:even').css("background-color","#96DAF5");
+			}
+
+
+			$( "#pretraga" ).keyup(function() {
+
+
+
+				//console.log($("#pretraga").val());
+
+				var unos = $("#pretraga").val().toLowerCase();
+				$("#raspored .podaci").filter(function() {
+				  $(this).toggle($(this).text().toLowerCase().indexOf(unos) > -1)
+				});
+
+
+
+				$('.podaci:visible:odd').css("background-color","#00B6FF");
+
+				$('.podaci:visible:even').css("background-color","#96DAF5");
+
+
+				});
+
+			function ProfesoriUcionice(profesor_ucionica){
+
+
+				var profesorL = profesor_ucionica.toLowerCase();
+				$("#pretraga").val(profesor_ucionica);
+
+				$("#raspored .podaci").filter(function() {
+				  $(this).toggle($(this).text().toLowerCase().indexOf(profesorL) > -1)
+				});
+
+
+				$('.podaci:visible:odd').css("background-color","#00B6FF");
+
+				$('.podaci:visible:even').css("background-color","#96DAF5");
+
+			}
+
+
+
+		</script>
+
+
+
+
+
+
+	</body>
+</html>
